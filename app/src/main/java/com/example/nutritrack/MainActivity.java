@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
+
+                        getSharedPreferences("nutritrack_prefs", MODE_PRIVATE)
+                                .edit()
+                                .putString("user_email", email)
+                                .apply();
+
                         Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(MainActivity.this, DashboardActivity.class));
                     } else {
