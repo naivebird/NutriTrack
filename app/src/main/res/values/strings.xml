@@ -24,6 +24,15 @@
     <string name="name">Name</string>
     <string name="weight">Weight</string>
     <string name="activity_level">Activity Level</string>
+    <string name="log_meal">Log Meal</string>
+    <string name="enter_food_name">Enter food name</string>
+    <string name="total_0_kcal">Total: 0 kcal</string>
+    <string name="remaining_2000_kcal">Remaining: 2000 kcal</string>
+    <string name="logged_meals">Logged Meals</string>
+    <string name="you_haven_t_reached_your_calorie_goal_for_today_yet_eat_more_and_remember_to_log_your_meals">You haven\'t reached your calorie goal for today yet, eat more and remember to log your meals!</string>
+    <string name="you_ve_reached_your_calorie_goal_for_today_stop_eating">You\'ve reached your calorie goal for today, stop eating!!!</string>
+    <string name="please_set_up_your_profile_first">Please set up your profile first.</string>
+    <string name="clear">Clear</string>
     <string-array name="activity_level">
         <item>Low</item>
         <item>Medium</item>

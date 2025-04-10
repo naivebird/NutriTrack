@@ -11,152 +11,158 @@
         android:id="@+id/txvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/name"
         app:layout_constraintBottom_toTopOf="@+id/txvAge"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintEnd_toStartOf="@+id/etName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txvAge"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_width="41dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="86dp"
         android:layout_marginBottom="72dp"
         android:text="@string/age"
-        app:layout_constraintBottom_toTopOf="@+id/txvHeight"
+        app:layout_constraintBottom_toTopOf="@+id/txvActvityLevel"
+        app:layout_constraintEnd_toStartOf="@+id/etAge"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txvHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="69dp"
         android:text="@string/height"
-        app:layout_constraintBottom_toTopOf="@+id/txvWeight"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/txvGoalLael"
+        app:layout_constraintEnd_toStartOf="@+id/etHeight" />
 
     <TextView
         android:id="@+id/txvWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="84dp"
         android:text="@string/weight"
-        app:layout_constraintBottom_toTopOf="@+id/txvActvityLevel"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/txvHeight"
+        app:layout_constraintEnd_toStartOf="@+id/etWeight" />
 
     <TextView
         android:id="@+id/txvActvityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="112dp"
         android:text="@string/activity_level"
-        app:layout_constraintBottom_toTopOf="@+id/txvGoalLael"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spnActivityLevel"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="26dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/etAge"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/txvName"
+        app:layout_constraintEnd_toStartOf="@+id/txvWeight"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.538" />
 
     <EditText
         android:id="@+id/etAge"
-        android:layout_width="208dp"
+        android:layout_width="189dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="52dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/etHeight"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/txvAge" />
+        app:layout_constraintBottom_toTopOf="@+id/spnActivityLevel"
+        app:layout_constraintEnd_toStartOf="@+id/txvHeight" />
 
     <EditText
         android:id="@+id/etHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="116dp"
         android:autofillHints=""
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="number|numberDecimal"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/etWeight"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toEndOf="@+id/txvHeight"
         tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/etWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:inputType="number|numberDecimal"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/spnActivityLevel"
+        app:layout_constraintBottom_toTopOf="@+id/etHeight"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
-        app:layout_constraintStart_toEndOf="@+id/txvWeight" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="603dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spnActivityLevel"
-        android:layout_width="211dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="193dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="96dp"
         android:entries="@array/activity_level"
-        app:layout_constraintBottom_toTopOf="@+id/btnSave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
-        app:layout_constraintStart_toEndOf="@+id/txvActvityLevel" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvGoalLael" />
 
     <TextView
         android:id="@+id/txvGoalLael"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="112dp"
         android:text="Calorie Goal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txvGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toEndOf="@+id/txvGoalLael"
-        app:layout_constraintTop_toBottomOf="@+id/spnActivityLevel"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txvGoalLael" />
 </androidx.constraintlayout.widget.ConstraintLayout>

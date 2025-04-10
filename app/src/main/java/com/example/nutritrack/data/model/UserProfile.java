@@ -13,7 +13,9 @@ public class UserProfile {
     
     private int activityLevel;
 
-    public UserProfile(int id, String email, String name, int age, float height, float weight, int activityLevel) {
+    private float goal;
+
+    public UserProfile(int id, String email, String name, int age, float height, float weight, int activityLevel, float goal) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -21,6 +23,7 @@ public class UserProfile {
         this.height = height;
         this.weight = weight;
         this.activityLevel = activityLevel;
+        this.goal = goal;
     }
 
     public int getId() {
@@ -77,5 +80,12 @@ public class UserProfile {
 
     public void setActivityLevel(int activityLevel) {
         this.activityLevel = activityLevel;
+    }
+    public float getGoal() {
+        return goal;
+    }
+
+    public void setGoal(float goal) {
+        this.goal = goal;
     }
 }
