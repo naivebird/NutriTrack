@@ -26,6 +26,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="64dp"
+        android:hint="@string/enter_your_name"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="@id/txvName"
         app:layout_constraintStart_toEndOf="@id/txvName" />
@@ -44,9 +45,10 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:hint="@string/enter_your_weight"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@id/txvWeight"
-        app:layout_constraintBottom_toBottomOf="@id/txvWeight" />
+        app:layout_constraintBottom_toBottomOf="@id/txvWeight"
+        app:layout_constraintStart_toEndOf="@id/txvWeight" />
 
     <!-- Age -->
 
@@ -67,6 +69,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="64dp"
+        android:hint="@string/enter_your_age"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@id/txvAge"
         app:layout_constraintStart_toEndOf="@id/txvAge" />
@@ -85,9 +88,10 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:hint="@string/enter_your_height"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@id/txvHeight"
-        app:layout_constraintBottom_toBottomOf="@id/txvHeight" />
+        app:layout_constraintBottom_toBottomOf="@id/txvHeight"
+        app:layout_constraintStart_toEndOf="@id/txvHeight" />
 
     <!-- Activity Level -->
 

@@ -13,7 +13,9 @@
             android:id="@+id/meal_input"
             android:layout_width="209dp"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_food_name" />
+            android:hint="@string/enter_food_name"
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/log_button"

@@ -25,16 +25,18 @@
         android:layout_height="wrap_content"
         android:autofillHints="emailAddress"
         android:hint="@string/email"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/registerPasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:autofillHints="password"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:layout_marginTop="16dp"/>
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/registerButton"
