@@ -33,6 +33,8 @@
     <string name="you_ve_reached_your_calorie_goal_for_today_stop_eating">You\'ve reached your calorie goal for today, stop eating!!!</string>
     <string name="please_set_up_your_profile_first">Please set up your profile first.</string>
     <string name="clear">Clear</string>
+    <string name="calorie_goal">Calorie Goal</string>
+    <string name="_2000">2000</string>
     <string-array name="activity_level">
         <item>Low</item>
         <item>Medium</item>

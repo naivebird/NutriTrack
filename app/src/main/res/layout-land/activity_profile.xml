@@ -7,162 +7,138 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <!-- Name -->
+
+    <!-- Weight -->
+
     <TextView
         android:id="@+id/txvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
         android:text="@string/name"
-        app:layout_constraintBottom_toTopOf="@+id/txvAge"
-        app:layout_constraintEnd_toStartOf="@+id/etName"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txvAge"
-        android:layout_width="41dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="86dp"
-        android:layout_marginBottom="72dp"
-        android:text="@string/age"
-        app:layout_constraintBottom_toTopOf="@+id/txvActvityLevel"
-        app:layout_constraintEnd_toStartOf="@+id/etAge"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txvHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="69dp"
-        android:text="@string/height"
-        app:layout_constraintBottom_toTopOf="@+id/txvGoalLael"
-        app:layout_constraintEnd_toStartOf="@+id/etHeight" />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/txvName"
+        app:layout_constraintStart_toEndOf="@id/txvName" />
 
     <TextView
         android:id="@+id/txvWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="84dp"
         android:text="@string/weight"
-        app:layout_constraintBottom_toTopOf="@+id/txvHeight"
-        app:layout_constraintEnd_toStartOf="@+id/etWeight" />
+        app:layout_constraintStart_toEndOf="@id/etName"
+        app:layout_constraintTop_toTopOf="@id/txvName" />
 
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@id/txvWeight"
+        app:layout_constraintBottom_toBottomOf="@id/txvWeight" />
+
+    <!-- Age -->
+
+    <!-- Height -->
+
+    <TextView
+        android:id="@+id/txvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txvName" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/txvAge"
+        app:layout_constraintStart_toEndOf="@id/txvAge" />
+
+    <TextView
+        android:id="@+id/txvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="@string/height"
+        app:layout_constraintStart_toEndOf="@id/etAge"
+        app:layout_constraintTop_toTopOf="@id/txvAge" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@id/txvHeight"
+        app:layout_constraintBottom_toBottomOf="@id/txvHeight" />
+
+    <!-- Activity Level -->
+
+    <!-- Calorie Goal -->
     <TextView
         android:id="@+id/txvActvityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
         android:text="@string/activity_level"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/spnActivityLevel"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="188dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="26dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/etAge"
-        app:layout_constraintEnd_toStartOf="@+id/txvWeight"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
-
-    <EditText
-        android:id="@+id/etAge"
-        android:layout_width="189dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="52dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/spnActivityLevel"
-        app:layout_constraintEnd_toStartOf="@+id/txvHeight" />
-
-    <EditText
-        android:id="@+id/etHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="116dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:importantForAutofill="no"
-        android:inputType="number|numberDecimal"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSave"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TextFields" />
-
-    <EditText
-        android:id="@+id/etWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="27dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/etHeight"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="603dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txvAge" />
 
     <Spinner
         android:id="@+id/spnActivityLevel"
-        android:layout_width="193dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:entries="@array/activity_level"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txvGoalLael" />
+        app:layout_constraintStart_toEndOf="@id/txvActvityLevel"
+        app:layout_constraintTop_toTopOf="@id/txvActvityLevel" />
 
     <TextView
-        android:id="@+id/txvGoalLael"
+        android:id="@+id/txvGoalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="112dp"
-        android:text="Calorie Goal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginStart="72dp"
+        android:text="@string/calorie_goal"
+        app:layout_constraintStart_toEndOf="@id/spnActivityLevel"
+        app:layout_constraintTop_toTopOf="@id/spnActivityLevel" />
 
     <TextView
         android:id="@+id/txvGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/_2000"
+        app:layout_constraintStart_toEndOf="@id/txvGoalLabel"
+        app:layout_constraintTop_toTopOf="@id/txvGoalLabel" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txvGoalLael" />
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,7 +56,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="56dp"
         android:text="@string/activity_level"
-        app:layout_constraintBottom_toTopOf="@+id/txvGoalLael"
+        app:layout_constraintBottom_toTopOf="@+id/txvGoalLabel"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -139,7 +139,7 @@
         app:layout_constraintStart_toEndOf="@+id/txvActvityLevel" />
 
     <TextView
-        android:id="@+id/txvGoalLael"
+        android:id="@+id/txvGoalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -156,7 +156,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toEndOf="@+id/txvGoalLael"
+        app:layout_constraintStart_toEndOf="@+id/txvGoalLabel"
         app:layout_constraintTop_toBottomOf="@+id/spnActivityLevel"
         app:layout_constraintVertical_bias="0.007" />
 </androidx.constraintlayout.widget.ConstraintLayout>
